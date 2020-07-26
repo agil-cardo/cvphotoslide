@@ -1,0 +1,177 @@
+/* influe le fr et le esp  */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #28109c;
+  background: url(../img/arcoiris.jpeg);
+}
+
+/* titres des bloc column  */
+h2,
+h3 {
+  text-align: center;
+  color: rgb(25, 75, 25);
+}
+
+
+/* taille polices autre elements  */
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 15px;
+}
+p {
+  font-size: 14px;
+}
+
+
+/* header */
+
+.header {
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+  padding: 20px;
+}
+
+.liencv a {
+  color:#28109c;
+  font-size: 15px;  
+  border: 1px solid #28109c;
+  margin: 2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 0.1rem;
+}
+
+.liencv a:hover { 
+  color: #fff;
+  background-color: #27109c96;
+}
+
+/* footer  */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 30px;
+  text-align: center;
+  padding-right: 30px;
+  padding-top: 5px;
+  background-color: rgba(29, 102, 26, 0.555);
+}
+#in {
+height: 20px;
+width: auto;
+
+}
+
+
+/* Changement general de la classe column */
+
+.column {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid rgba(136, 127, 172, 0.568); */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.301);
+  border-radius: 3px;
+}
+.moitie {
+  display: flex;  
+  justify-content: space-between;
+}
+.hobby {
+width: 45%; 
+}
+
+
+/* div choix de la langue  */
+
+.choix-langue {
+  top: 0px;
+  position: sticky;
+
+  float: right;
+  margin-right: 10px;
+}
+.langue {
+  background-color: rgba(19, 14, 12, 0.233);
+  padding: 5px;
+  border-radius: 2px;
+}
+#fr {
+  margin: 5px 0 5px 0;
+}
+#fr:hover {
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: rgba(255, 0, 0, 0.425);
+}
+#esp:hover {
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: rgba(128, 53, 248, 0.425);
+}
+
+
+/* changer que le cote CV francais  */
+
+.francais .column {
+  background-color: rgba(142, 135, 206, 0.185);
+}
+
+
+
+/* changer que le cote CV espagnol  */
+
+.espagnol .column {
+  background-color: rgba(206, 157, 241, 0.185);
+}
+
+
+
+/* FORMULAIRE  */
+
+.form {
+  text-align: center;
+}
+.form div {
+  margin: 3px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+/* id test =h2 header */
+#test:hover{
+  cursor: pointer;
+  transform: skewY(20deg);
+  transition: 1.5s;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .moitie {
+    display: block; 
+  }
+  .hobby {
+    width: auto;    
+    } 
+
+}
